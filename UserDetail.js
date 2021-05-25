@@ -5,7 +5,6 @@ class UserDetail extends React.Component {
             isLoading:true,
             users: [],
             apiUsers : [],
-            // addsearch :[],
             inputvalue:'',
             error:null
         }    
@@ -34,11 +33,9 @@ class UserDetail extends React.Component {
                  return (d.address.street.toLowerCase().indexOf(event.target.value.toLowerCase()) !==-1
                   || d.address.city.toLowerCase().indexOf(event.target.value.toLowerCase()) !==-1
                   || d.address.suite.toLowerCase().indexOf(event.target.value.toLowerCase()) !==-1 
-                  || searchValue.indexOf(event.target.value.toLowerCase()) !== -1)
-             
+                  || searchValue.indexOf(event.target.value.toLowerCase()) !== -1)  
         })
-        
-        // console.log(filtereddata);
+
         this.setState({ users: filtereddata,
         inputvalue:event.target.value 
     })
@@ -54,7 +51,7 @@ class UserDetail extends React.Component {
                 {error ? <p>{error.message}</p> : null}
                 <div className="row_data">
                     {!isLoading ?(
-                        (users.length !== 0 ?users:apiUsers).map((user) => {
+                        (inputvalue.length !== 0 ?users:apiUsers).map((user) => {
                             return (
                                 <div className="card_detail" key={user.id}>
                                     <div className="user_name">{user.name}</div>
