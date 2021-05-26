@@ -1,73 +1,101 @@
- .App {
+.App {
   text-align: center;
-}
-
-/*.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+} 
 
 *{
-  font-family: 'Montserrat', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.main_container{
-  background-color: antiquewhite;
-}
+
 .card_detail{
   background-color: whitesmoke;
-  /* border: 1px solid black; */
+  border: 1px solid #c9c9c9;
   margin: 20px;
   display: inline-block;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
+  text-align: center; 
+  align-items: center; 
+   justify-content: center;
   width:270px;
-  border-radius: 10px;
-  /* padding: 5px 0px; */
+  padding: 15px;
+  letter-spacing:0.5px;
 }
 
 .search_user_name{
   margin :30px 0;
   padding: 5px 10px;
   border-radius: 5px;
-}
-
-.search_user_name input{
+  /* text-align: center; */
   align-items: center;
-justify-content: center;
-text-align: center;
+  justify-content: center;
 }
 
 .user_name{
+  font-size:large;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+.user_profile_id{
   font-weight: bold;
+  padding: 10px;
+  border-bottom: 1px solid rgb(192, 172, 172);
+}
+
+.user_personal_detail{
+  text-align: left;
+  border-bottom: 1px solid rgb(192, 172, 172);
+  padding: 5px;
+}
+
+.user_name_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.user_firstname_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+.user_contact_title{
+  text-align: left;
+  border-bottom: 1px solid rgb(192, 172, 172);
+  padding: 5px;
+}
+.user_email_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.user_contact_no{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.user_website_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+
+.user_address_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
+}
+.user_company_name{
+  text-align: left;
+  border-bottom: 1px solid rgb(192, 172, 172);
+  padding: 5px;
+}
+.user_company_title{
+  color: gray;
+  text-align: left;
+  padding: 2px 5px;
 }
